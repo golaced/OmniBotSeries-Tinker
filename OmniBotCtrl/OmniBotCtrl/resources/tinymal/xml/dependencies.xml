@@ -1,0 +1,34 @@
+<mujocoinclude>
+    <compiler angle="radian" inertiafromgeom="auto" inertiagrouprange="4 5" meshdir="/home/pi/Downloads/LocomotionWithNP3O-master/resources/tinymal/meshes/"/>
+    <asset>
+        <mesh name="base" file="base.STL" />
+        <mesh name="FL_hip" file="FL_hip.STL" />
+        <mesh name="FL_thigh" file="FL_thigh.STL" />
+        <mesh name="FL_calf" file="FL_calf.STL" />
+        <mesh name="FL_foot" file="FL_foot.STL" />
+        <mesh name="FR_hip" file="FR_hip.STL" />
+        <mesh name="FR_thigh" file="FR_thigh.STL" />
+        <mesh name="FR_calf" file="FR_calf.STL" />
+        <mesh name="FR_foot" file="FR_foot.STL" />
+        <mesh name="RL_hip" file="RL_hip.STL" />
+        <mesh name="RL_thigh" file="RL_thigh.STL" />
+        <mesh name="RL_calf" file="RL_calf.STL" />
+        <mesh name="RL_foot" file="RL_foot.STL" />
+        <mesh name="RR_hip" file="RR_hip.STL" />
+        <mesh name="RR_thigh" file="RR_thigh.STL" />
+        <mesh name="RR_calf" file="RR_calf.STL" />
+        <mesh name="RR_foot" file="RR_foot.STL" />
+
+        <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2"
+        width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
+        <texture name="texplane2" type="2d" builtin="checker" rgb1="1 0.3137 0.1843" rgb2="0.0 0.30196 0.38039"
+        width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
+
+        <material name="matplane" reflectance="0." texture="texplane" texrepeat="1 1" texuniform="true"/>
+        <material name="matplane2" reflectance="0.1" texture="texplane2" texrepeat="1 1" texuniform="true"/>
+
+        <hfield name='hf0' nrow='200' ncol='200' size="5 5 0.2 .1"/>
+        <hfield file="../terrain/uneven.png" name="hf1" ncol="0" nrow="0" size="50 50 0.35 0.1" />  
+    </asset>
+
+</mujocoinclude>

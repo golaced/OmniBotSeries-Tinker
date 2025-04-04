@@ -1,0 +1,28 @@
+<mujocoinclude>
+    <compiler angle="radian" inertiafromgeom="auto" inertiagrouprange="4 5" meshdir="../meshes/"/>
+    <asset>
+        <mesh name="base_link" file="base_link.STL" />
+        <mesh name="L0_Link" file="L0_Link.STL" />
+        <mesh name="L1_Link" file="L1_Link.STL" />
+        <mesh name="L2_Link" file="L2_Link.STL" />
+        <mesh name="L3_Link" file="L3_Link.STL" />
+        <mesh name="L4_Link_ankle" file="L4_Link_ankle.STL" />
+        <mesh name="R0_Link" file="R0_Link.STL" />
+        <mesh name="R1_Link" file="R1_Link.STL" />
+        <mesh name="R2_Link" file="R2_Link.STL" />
+        <mesh name="R3_Link" file="R3_Link.STL" />
+        <mesh name="R4_Link_ankle" file="R4_Link_ankle.STL" />
+
+        <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2"
+        width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
+        <texture name="texplane2" type="2d" builtin="checker" rgb1="1 0.3137 0.1843" rgb2="0.0 0.30196 0.38039"
+        width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
+
+        <material name="matplane" reflectance="0." texture="texplane" texrepeat="1 1" texuniform="true"/>
+        <material name="matplane2" reflectance="0.1" texture="texplane2" texrepeat="1 1" texuniform="true"/>
+
+        <!--hfield name='hf0' nrow='200' ncol='200' size="5 5 0.2 .1"/-->
+        <!--hfield file="../terrain/uneven.png" name="hf1" ncol="0" nrow="0" size="50 50 0.35 0.1" /-->  
+    </asset>
+
+</mujocoinclude>

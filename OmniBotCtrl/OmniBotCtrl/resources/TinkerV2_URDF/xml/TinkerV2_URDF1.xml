@@ -1,0 +1,81 @@
+<mujoco model="TinkerV2_URDF">
+    <compiler angle="radian" meshdir="../meshes/" />
+    <size njmax="500" nconmax="100" />
+    <asset>
+        <mesh name="base_link" file="base_link.STL" />
+        <mesh name="L0_Link" file="L0_Link.STL" />
+        <mesh name="L1_Link" file="L1_Link.STL" />
+        <mesh name="L2_Link" file="L2_Link.STL" />
+        <mesh name="L3_Link" file="L3_Link.STL" />
+        <mesh name="L4_Link_ankle" file="L4_Link_ankle.STL" />
+        <mesh name="R0_Link" file="R0_Link.STL" />
+        <mesh name="R1_Link" file="R1_Link.STL" />
+        <mesh name="R2_Link" file="R2_Link.STL" />
+        <mesh name="R3_Link" file="R3_Link.STL" />
+        <mesh name="R4_Link_ankle" file="R4_Link_ankle.STL" />
+    </asset>
+    <worldbody>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.501961 0.501961 0.501961 1" mesh="base_link" />
+        <geom type="mesh" rgba="0.501961 0.501961 0.501961 1" mesh="base_link" />
+        <body name="L0_Link" pos="-0.002787 0.053542 0.054381">
+            <inertial pos="0.0006 0 -0.0529" mass="0.587331" diaginertia="0.0007 0.0004 0.0004" />
+            <joint name="J_L0" pos="0 0 0" axis="0 0 1" limited="true" range="-0.7 0.7" />
+            <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.898039 0.917647 0.929412 1" mesh="L0_Link" />
+            <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="L0_Link" />
+            <body name="L1_Link" pos="0.016958 0 -0.053917">
+                <inertial pos="-0.0035 0.0342 -0.0092" mass="0.0295522" diaginertia="0.0001 0.0001 5e-05" />
+                <joint name="J_L1" pos="0 0 0" axis="-1 0 0" limited="true" range="-0.38 0.46" />
+                <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.898039 0.917647 0.929412 1" mesh="L1_Link" />
+                <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="L1_Link" />
+                <body name="L2_Link" pos="-0.012958 0.059001 -0.014313">
+                    <inertial pos="-0.0008 0.0178 -0.0738" quat="0.707107 0 0 0.707107" mass="1.34863" diaginertia="0.0082 0.0075 0.0009" />
+                    <joint name="J_L2" pos="0 0 0" axis="0 1 0" limited="true" range="-1.57 1.57" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.792157 0.819608 0.933333 1" mesh="L2_Link" />
+                    <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="L2_Link" />
+                    <body name="L3_Link" pos="0 0 -0.14738">
+                        <inertial pos="0 0.008 -0.122" quat="0.707107 0 0 0.707107" mass="0.629727" diaginertia="0.0013 0.0012 0.0002" />
+                        <joint name="J_L3" pos="0 0 0" axis="0 1 0" limited="true" range="-2.35 0" />
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" mesh="L3_Link" />
+                        <geom type="mesh" rgba="1 1 1 1" mesh="L3_Link" />
+                        <body name="L4_Link_ankle" pos="0 0.025 -0.14049">
+                            <inertial pos="0.0118 -0.0068 -0.0296" quat="0.5 0.5 0.5 0.5" mass="0.171743" diaginertia="0.0003 0.0003 0.0001" />
+                            <joint name="J_L4_ankle" pos="0 0 0" axis="0 -1 0" limited="true" range="-1.2 1.2" />
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" mesh="L4_Link_ankle" />
+                            <geom type="mesh" rgba="1 1 1 1" mesh="L4_Link_ankle" />
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+        <body name="R0_Link" pos="-0.002787 -0.053184 0.054381">
+            <inertial pos="0 -0.0001 -0.0512" mass="0.587331" diaginertia="0.0008 0.0005 0.0004" />
+            <joint name="J_R0" pos="0 0 0" axis="0 0 1" limited="true" range="-0.7 0.7" />
+            <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.898039 0.917647 0.929412 1" mesh="R0_Link" />
+            <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="R0_Link" />
+            <body name="R1_Link" pos="0.016958 0 -0.053917">
+                <inertial pos="-0.0035 -0.0342 -0.0092" mass="0.0295513" diaginertia="0.0001 0.0001 5e-05" />
+                <joint name="J_R1" pos="0 0 0" axis="-1 0 0" limited="true" range="-0.38 0.47" />
+                <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.898039 0.917647 0.929412 1" mesh="R1_Link" />
+                <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="R1_Link" />
+                <body name="R2_Link" pos="-0.012958 -0.059 -0.014313">
+                    <inertial pos="-0.0008 -0.0178 -0.0737" quat="0.707107 0 0 0.707107" mass="1.35024" diaginertia="0.0082 0.0075 0.001" />
+                    <joint name="J_R2" pos="0 0 0" axis="0 -1 0" limited="true" range="-1.57 1.57" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.792157 0.819608 0.933333 1" mesh="R2_Link" />
+                    <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="R2_Link" />
+                    <body name="R3_Link" pos="0 0 -0.14738">
+                        <inertial pos="0 -0.0073 -0.1176" quat="0.707107 0 0 0.707107" mass="0.511662" diaginertia="0.0012 0.0011 0.0002" />
+                        <joint name="J_R3" pos="0 0 0" axis="0 -1 0" limited="true" range="0 2.35" />
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" mesh="R3_Link" />
+                        <geom type="mesh" rgba="1 1 1 1" mesh="R3_Link" />
+                        <body name="R4_Link_ankle" pos="0 -0.025 -0.14049">
+                            <inertial pos="0.0118 0.0067 -0.0296" quat="0.5 0.5 0.5 0.5" mass="0.17174" diaginertia="0.0003 0.0003 0.0001" />
+                            <joint name="J_R4_ankle" pos="0 0 0" axis="0 1 0" limited="true" range="-1.2 1.2" />
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 0.90588 0.91765 1" mesh="R4_Link_ankle" />
+                            <geom type="mesh" rgba="1 0.90588 0.91765 1" mesh="R4_Link_ankle" />
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>

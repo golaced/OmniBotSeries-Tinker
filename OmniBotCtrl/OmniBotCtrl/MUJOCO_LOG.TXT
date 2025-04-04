@@ -1,0 +1,18 @@
+Sun Jul 14 16:38:55 2024
+WARNING: mju_openResource: unknown file '/home/pi/Downloads/LocomotionWithNP3O-master/resources/tinymal/mujoco/tinymal.xml'
+
+Sun Jul 14 16:41:23 2024
+WARNING: mju_openResource: unknown file '/home/pi/Downloads/LocomotionWithNP3O-master/resources/tinymal/mujoco/tinymal.xml'
+
+Mon Jul 15 14:42:52 2024
+WARNING: mju_openResource: unknown file '/home/pi/Downloads/LocomotionWithNP3O-master/resources/tinymal/xml/tinymal-terrain.xml'
+
+Mon Jul 29 19:59:38 2024
+WARNING: mju_openResource: unknown file '/home/pi/Downloads/LocomotionWithNP3O-master/resources/tinymal/xml/world-terrain.xml'
+
+Fri Oct  4 10:34:48 2024
+WARNING: mju_openResource: unknown file '/home/pi/Downloads/LocomotionWithNP3O-masteroldx/resources/tinker/xml/world.xml'
+
+Thu Mar 27 22:50:06 2025
+WARNING: mju_openResource: unknown file '/home/rx/Downloads/LocomotionWithNP3O-masteroldx/resources/TinkerV2_URDF/xml/tinker_4.xml'
+

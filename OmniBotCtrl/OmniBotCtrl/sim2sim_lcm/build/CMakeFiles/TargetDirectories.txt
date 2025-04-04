@@ -1,0 +1,7 @@
+/home/pi/Downloads/back_good/LocomotionWithNP3O-masteroldxgoo2/LocomotionWithNP3O-masteroldx/sim2sim_lcm/build/CMakeFiles/lcm_types.dir
+/home/pi/Downloads/back_good/LocomotionWithNP3O-masteroldxgoo2/LocomotionWithNP3O-masteroldx/sim2sim_lcm/build/CMakeFiles/lcm_service.dir
+/home/pi/Downloads/back_good/LocomotionWithNP3O-masteroldxgoo2/LocomotionWithNP3O-masteroldx/sim2sim_lcm/build/CMakeFiles/lcm_publisher.dir
+/home/pi/Downloads/back_good/LocomotionWithNP3O-masteroldxgoo2/LocomotionWithNP3O-masteroldx/sim2sim_lcm/build/CMakeFiles/udp_publisher.dir
+/home/pi/Downloads/back_good/LocomotionWithNP3O-masteroldxgoo2/LocomotionWithNP3O-masteroldx/sim2sim_lcm/build/CMakeFiles/udp_publisher_tinker.dir
+/home/pi/Downloads/back_good/LocomotionWithNP3O-masteroldxgoo2/LocomotionWithNP3O-masteroldx/sim2sim_lcm/build/CMakeFiles/edit_cache.dir
+/home/pi/Downloads/back_good/LocomotionWithNP3O-masteroldxgoo2/LocomotionWithNP3O-masteroldx/sim2sim_lcm/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="TinkerV2_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0191973307162497 -0.000897919994656132 0.0759941643862994"
+        rpy="0 0 0" />
+      <mass
+        value="4.72255223919314" />
+      <inertia
+        ixx="0.00981790485893184"
+        ixy="0.000185665613392179"
+        ixz="0.000239154967746463"
+        iyy="0.0101768842092725"
+        iyz="-3.80240754502535E-05"
+        izz="0.013478798045977" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L0_Link">
+    <inertial>
+      <origin
+        xyz="0.000619765634653893 4.28150829746982E-05 -0.0528764064151365"
+        rpy="0 0 0" />
+      <mass
+        value="0.587331353457417" />
+      <inertia
+        ixx="0.000679574562891484"
+        ixy="6.35938529396535E-07"
+        ixz="-2.00604496468451E-06"
+        iyy="0.000388522055332698"
+        iyz="7.19276925606477E-08"
+        izz="0.000394111330183765" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L0_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L0_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_L0"
+    type="revolute">
+    <origin
+      xyz="-0.002787 0.053542 0.054381"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L0_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="12"
+      velocity="20" />
+  </joint>
+  <link
+    name="L1_Link">
+    <inertial>
+      <origin
+        xyz="-0.00347150340744003 0.0341575635250294 -0.00920422354080709"
+        rpy="0 0 0" />
+      <mass
+        value="0.0295521887544817" />
+      <inertia
+        ixx="2.01156742464535E-05"
+        ixy="2.92602620521006E-06"
+        ixz="-7.57277675706635E-07"
+        iyy="9.09722746772408E-06"
+        iyz="3.46755992791597E-06"
+        izz="1.70589846703653E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_L1"
+    type="revolute">
+    <origin
+      xyz="0.016958 0 -0.053917"
+      rpy="0 0 0" />
+    <parent
+      link="L0_Link" />
+    <child
+      link="L1_Link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="20"
+      velocity="20" />
+  </joint>
+  <link
+    name="L2_Link">
+    <inertial>
+      <origin
+        xyz="-0.000792134004393902 0.0178195463367404 -0.0737982008261337"
+        rpy="0 0 0" />
+      <mass
+        value="1.34863094594399" />
+      <inertia
+        ixx="0.00129423808911511"
+        ixy="-1.85215677306796E-07"
+        ixz="-1.27421115593987E-05"
+        iyy="0.00198392746136237"
+        iyz="-1.28976667559675E-06"
+        izz="0.000901841739960808" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_L2"
+    type="revolute">
+    <origin
+      xyz="-0.012958 0.059001 -0.014313"
+      rpy="0 0 0" />
+    <parent
+      link="L1_Link" />
+    <child
+      link="L2_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="20"
+      velocity="20" />
+  </joint>
+  <link
+    name="L3_Link">
+    <inertial>
+      <origin
+        xyz="-4.78959695469905E-06 0.00800400502048923 -0.121850966704469"
+        rpy="0 0 0" />
+      <mass
+        value="0.629727076499127" />
+      <inertia
+        ixx="0.000532562144393527"
+        ixy="-3.7728134151506E-09"
+        ixz="-3.45474873647074E-09"
+        iyy="0.000692863896298871"
+        iyz="5.60689853527592E-07"
+        izz="0.000215617766048769" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_L3"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.14738"
+      rpy="0 0 0" />
+    <parent
+      link="L2_Link" />
+    <child
+      link="L3_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="20"
+      velocity="20" />
+  </joint>
+  <link
+    name="L4_Link_ankle">
+    <inertial>
+      <origin
+        xyz="0.0117863373334438 -0.00675302646643325 -0.0296425502455308"
+        rpy="0 0 0" />
+      <mass
+        value="0.171742682777178" />
+      <inertia
+        ixx="4.69796687547755E-05"
+        ixy="3.58937955264407E-06"
+        ixz="3.63374508552524E-06"
+        iyy="0.000315299126304912"
+        iyz="-5.96116241048033E-06"
+        izz="0.000323351986881265" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L4_Link_ankle.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/L4_Link_ankle.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_L4_ankle"
+    type="revolute">
+    <origin
+      xyz="0 0.025 -0.14049"
+      rpy="0 0 0" />
+    <parent
+      link="L3_Link" />
+    <child
+      link="L4_Link_ankle" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="12"
+      velocity="20" />
+  </joint>
+  <link
+    name="R0_Link">
+    <inertial>
+      <origin
+        xyz="0.000619765633283198 -6.07774382760072E-05 -0.0528236158498482"
+        rpy="0 0 0" />
+      <mass
+        value="0.587331353381893" />
+      <inertia
+        ixx="0.000679574562830091"
+        ixy="-6.95388354708518E-07"
+        ixz="-1.16330844642069E-06"
+        iyy="0.000388522055270403"
+        iyz="7.19277121372076E-08"
+        izz="0.000394111330166793" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R0_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R0_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_R0"
+    type="revolute">
+    <origin
+      xyz="-0.002787 -0.053184 0.054381"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R0_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="12"
+      velocity="20" />
+  </joint>
+  <link
+    name="R1_Link">
+    <inertial>
+      <origin
+        xyz="-0.00347132375249927 -0.034156693924089 -0.0092040577765706"
+        rpy="0 0 0" />
+      <mass
+        value="0.029551251476222" />
+      <inertia
+        ixx="2.01147208072505E-05"
+        ixy="-2.92579511895536E-06"
+        ixz="-7.57224769336987E-07"
+        iyy="9.09689869241228E-06"
+        iyz="-3.46737843303799E-06"
+        izz="1.70580224435408E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_R1"
+    type="revolute">
+    <origin
+      xyz="0.016958 0 -0.053917"
+      rpy="0 0 0" />
+    <parent
+      link="R0_Link" />
+    <child
+      link="R1_Link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="20"
+      velocity="20" />
+  </joint>
+  <link
+    name="R2_Link">
+    <inertial>
+      <origin
+        xyz="-0.000791325692475933 -0.0178404338194351 -0.0737102397834983"
+        rpy="0 0 0" />
+      <mass
+        value="1.35023891621348" />
+      <inertia
+        ixx="0.00129479834886649"
+        ixy="1.89288275232469E-07"
+        ixz="1.3580308094523E-05"
+        iyy="0.00198470975774013"
+        iyz="-1.19386485111444E-06"
+        izz="0.00090206400749835" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_R2"
+    type="revolute">
+    <origin
+      xyz="-0.012958 -0.059 -0.014313"
+      rpy="0 0 0" />
+    <parent
+      link="R1_Link" />
+    <child
+      link="R2_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="20"
+      velocity="-2" />
+  </joint>
+  <link
+    name="R3_Link">
+    <inertial>
+      <origin
+        xyz="2.2396603683833E-05 -0.00733283067364296 -0.117588903345598"
+        rpy="0 0 0" />
+      <mass
+        value="0.511661896307101" />
+      <inertia
+        ixx="0.000485297776959414"
+        ixy="1.48188072321711E-08"
+        ixz="2.40996895467847E-08"
+        iyy="0.000609655277025697"
+        iyz="-4.96142654991589E-07"
+        izz="0.000168053491940784" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_R3"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.14738"
+      rpy="0 0 0" />
+    <parent
+      link="R2_Link" />
+    <child
+      link="R3_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="20"
+      velocity="20" />
+  </joint>
+  <link
+    name="R4_Link_ankle">
+    <inertial>
+      <origin
+        xyz="0.011786 0.0067411 -0.029643"
+        rpy="0 0 0" />
+      <mass
+        value="0.17174" />
+      <inertia
+        ixx="4.698E-05"
+        ixy="-3.5894E-06"
+        ixz="3.6337E-06"
+        iyy="0.0003153"
+        iyz="5.9612E-06"
+        izz="0.00032335" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R4_Link_ankle.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.90588 0.91765 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://TinkerV2_URDF/meshes/R4_Link_ankle.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J_R4_ankle"
+    type="revolute">
+    <origin
+      xyz="0 -0.025 -0.14049"
+      rpy="0 0 0" />
+    <parent
+      link="R3_Link" />
+    <child
+      link="R4_Link_ankle" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="12"
+      velocity="20" />
+  </joint>
+</robot>

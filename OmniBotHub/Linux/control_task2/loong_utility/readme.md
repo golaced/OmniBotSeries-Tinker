@@ -1,0 +1,1 @@
+公共文件，对c++的部分语法糖加强，配合其他项目使用。如：loong_frame、loong_sim、loong_platform

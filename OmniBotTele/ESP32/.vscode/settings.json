@@ -1,0 +1,13 @@
+{
+    "idf.adapterTargetName": "esp32s3",
+    "idf.portWin": "COM34",
+    "files.associations": {
+        "ui.h": "c",
+        "stdio.h": "c",
+        "wifi_config.h": "c",
+        "robot.h": "c",
+        "ui_helpers.h": "c",
+        "lwip_demo.h": "c"
+    },
+    "idf.flashType": "UART"
+}

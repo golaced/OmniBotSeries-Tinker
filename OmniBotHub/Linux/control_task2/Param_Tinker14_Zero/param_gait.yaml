@@ -1,0 +1,195 @@
+robot: tinker14-small-01 #odroid@192.168.1.120 3DOF
+#ps -ef | grep hardware_task
+#ssh-keygen
+#ssh-copy-id -i /home/pi/.ssh/id_rsa.pub odroid@192.168.1.120  192.168.1.248
+#ssh-copy-id -i /home/pi/.ssh/id_rsa.pub xavier@192.168.1.212
+
+sys_param: 
+  auto_gait_time:    1
+  auto_gait_switch:  0
+  auto_zmp_st_check: 0
+  auto_mess_est:     0
+
+vmc_param: 
+  stance_time: 0.45
+  swing_time:  0.45
+  delay_time:  0.0
+  stand_z: 0.8 #rate %
+
+  cog_off_x: 0.000
+  cog_off_y: 0
+  spd_off_x: 0.000
+
+  move_off_x: [0.000,-0.000]
+  move_off_y: 0
+
+  move_off_pit: 0.0
+  move_off_rol: 0
+
+  att_bias_pit: 0 #+front
+  att_bias_rol: 0 #+ to left
+  att_bias_pit_f: 0
+  att_bias_rol_f: 0
+
+  max_spd_x:      0.32
+  max_spd_y:      0.18
+  max_spd_rotate: 65
+
+rl_gait: 
+  net_run_dt:   0.028 #s
+  action_scale: 0.25
+  #in rad
+  def_act0:  0
+  def_act1:  0.12
+  def_act2:  0.56
+  def_act3:  -1.12
+  def_act4:  -0.57
+  def_act5:  0
+  def_act6:  0
+
+  def_act7:  0
+  def_act8:  -0.12
+  def_act9:  -0.56
+  def_act10: 1.12
+  def_act11: 0.57
+  def_act12: 0
+  def_act13: 0
+
+  en_vel_off: 1
+  vel_x_off: -0.0
+  vel_y_off: 0.0
+
+imp_param: 
+  stiff_init: 2.5
+  stiff_stand: 2.0
+
+  kp_q00: 13.0
+  kp_q01: 15.0
+  kp_q02: 15.0
+  kp_q03: 15.0
+  kp_q04: 13.0
+  kp_q05: 0.0 #
+  kp_q06: 0.0 #
+  kp_q10: 13.0
+  kp_q11: 15.0
+  kp_q12: 15.0
+  kp_q13: 15.0
+  kp_q14: 13.0
+  kp_q15: 0.0
+  kp_q16: 0.0
+
+  kd_q00: 0.3
+  kd_q01: 0.65
+  kd_q02: 0.65
+  kd_q03: 0.65
+  kd_q04: 0.3
+  kd_q05: 0.0 #
+  kd_q06: 0.0 #
+  kd_q10: 0.3
+  kd_q11: 0.65
+  kd_q12: 0.65
+  kd_q13: 0.65
+  kd_q14: 0.3
+  kd_q15: 0.0
+  kd_q16: 0.0
+
+  stiff_q00: 1.0
+  stiff_q01: 1.0
+  stiff_q02: 1.0
+  stiff_q03: 1.0
+  stiff_q04: 1.0
+  stiff_q05: 0 #
+  stiff_q06: 0 #
+  stiff_q10: 1.0
+  stiff_q11: 1.0
+  stiff_q12: 1.0
+  stiff_q13: 1.0
+  stiff_q14: 1.0
+  stiff_q15: 0
+  stiff_q16: 0
+ 
+#----end imp param
+  imp_x_kp: 0.01 #0.1
+  imp_y_kp: 0.01
+  imp_z_kp: 0.03 #0.03
+
+  imp_x_kd: 0.0001
+  imp_y_kd: 0.0001
+  imp_z_kd: 0.0001
+
+  fb_x_kp: 0.0025
+  fb_y_kp: 0.0025
+  fb_z_kp: 0.0025
+
+  fb_x_kd: 0
+  fb_y_kd: 0
+  fb_z_kd: 0
+
+  imp_x_fp: 0.25 #imp x forward RC gain
+  imp_y_fp: 0.25
+  imp_z_fp: 0.0
+
+#--------------------------------VMC param---------------------------------
+stand_param: 
+  kp_pit: 40
+  ki_pit: 1
+  kd_pit: 0.15
+
+  kp_rol: 30
+  ki_rol: 1
+  kd_rol: 0.15
+
+  kp_yaw: 35
+  ki_yaw: 0.5
+  kd_yaw: 0.015
+  kff_dyaw: 0
+
+  kp_pos_x: 20
+  ki_pos_x: 0.5
+  kd_pos_x: 0.2
+
+  kp_pos_y: 20
+  ki_pos_y: 0.5
+  kd_pos_y: 0.2
+
+  kp_pos_z: 2500
+  ki_pos_z: 50
+  kd_pos_z: 100
+
+  ground_mu: 0.5
+  
+
+selfright_param: 
+  kp_rol: 60
+  ki_rol: 20
+  kd_rol: 1.5
+
+  kp_yaw: 0.8
+  kp_dyaw: 4
+  ki_dyaw: 0
+  kd_dyaw: 0.2
+  kff_dyaw: 1.7
+
+  kp_vel_x: 120
+  ki_vel_x: 50
+  kd_vel_x: 0.05
+
+  kp_pos_z: 1000
+  ki_pos_z: 50
+  kd_pos_z: 100
+
+  ground_mu: 0.5
+
+model_param: 
+  model_num: 5
+  model1_path: 'Model/model1/policy_arm64_cpu.so'
+  model2_path: 'Model/model2/policy_arm64_cpu.so'
+  model3_path: 'Model/model3/policy_arm64_cpu.so'
+  model4_path: 'Model/model4/policy_arm64_cpu.so'
+  model5_path: 'Model/model5/policy_arm64_cpu.so'
+
+
+
+
+	
+

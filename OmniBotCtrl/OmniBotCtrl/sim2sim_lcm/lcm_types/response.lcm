@@ -1,0 +1,8 @@
+package my_lcm;
+
+
+struct Response {
+    float q_exp[12];
+    float dq_exp[12];
+    float tau_exp[12];
+}

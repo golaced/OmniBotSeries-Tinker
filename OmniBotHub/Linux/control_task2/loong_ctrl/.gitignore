@@ -1,0 +1,15 @@
+build
+build_x64
+build_arm64
+
+nabo_output
+#third_party
+
+.vscode
+log
+
+tools/py_plot.py
+py_plot.py
+
+*.txt
+!CMakeLists.txt

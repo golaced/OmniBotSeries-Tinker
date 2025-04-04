@@ -1,0 +1,13 @@
+package my_lcm;
+
+
+struct Request {
+    float command[10];
+    float eu_ang[3];
+    float omega[3];
+    float acc[3];
+    float q[12];
+    float dq[12];
+    float tau[12];
+}
+

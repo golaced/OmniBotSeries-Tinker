@@ -1,0 +1,90 @@
+<mujoco>
+    <include file="scene.xml"/>
+    <include file="dependencies.xml"/>
+
+    <worldbody>
+		<include file="taitan_o.xml" />
+    </worldbody>
+
+ 	<actuator>      
+		<motor name="J_L0" joint="J_L0" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_L1" joint="J_L1" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_L2" joint="J_L2" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_L3" joint="J_L3" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_L4_ankel" joint="J_L4_ankel" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_R0" joint="J_R0" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_R1" joint="J_R1" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_R2" joint="J_R2" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_R3" joint="J_R3" gear="1" ctrllimited="true" ctrlrange="-12 12"/>
+		<motor name="J_R4_ankel" joint="J_R4_ankel" gear="1" ctrllimited="true" ctrlrange="-12 12"/>		 
+    </actuator>
+	
+    <!--actuator>      
+		<position name="J_L0" joint="J_L0" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_L1" joint="J_L1" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_L2" joint="J_L2" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_L3" joint="J_L3" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_L4" joint="J_L4_ankel" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+
+		<position name="J_R0" joint="J_R0" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_R1" joint="J_R1" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_R2" joint="J_R2" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_R3" joint="J_R3" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+		<position name="J_R4" joint="J_R4_ankel" gear="1" ctrllimited="true" kp="15" ctrlrange="-1.57 1.57" />
+	 
+		
+		<velocity name="J_L0v" joint="J_L0" kv="0.50" user="1"/>
+		<velocity name="J_L1v" joint="J_L1" kv="0.50" user="1"/>
+		<velocity name="J_L2v" joint="J_L2" kv="0.50" user="1"/>
+		<velocity name="J_L3v" joint="J_L3" kv="0.50" user="1"/>
+		<velocity name="J_L4v" joint="J_L4_ankel" kv="0.50" user="1"/>
+		
+		<velocity name="J_R0v" joint="J_R0" kv="0.50" user="1"/>
+		<velocity name="J_R1v" joint="J_R1" kv="0.50" user="1"/>
+		<velocity name="J_R2v" joint="J_R2" kv="0.50" user="1"/>
+		<velocity name="J_R3v" joint="J_R3" kv="0.50" user="1"/>
+		<velocity name="J_R4v" joint="J_R4_ankel" kv="0.50" user="1"/>
+ 
+    </actuator-->
+    <sensor>
+		<actuatorpos name='J_L0'  actuator='J_L0' user='13'/>
+		<actuatorpos name='J_L1'  actuator='J_L1' user='13'/>
+		<actuatorpos name='J_L2'  actuator='J_L2' user='13'/>
+		<actuatorpos name='J_L3'  actuator='J_L3' user='13'/>
+		<actuatorpos name='J_L4_ankel'  actuator='J_L4_ankel' user='13'/>
+		<actuatorpos name='J_R0'  actuator='J_R0' user='13'/>
+		<actuatorpos name='J_R1'  actuator='J_R1' user='13'/>
+		<actuatorpos name='J_R2'  actuator='J_R2' user='13'/>
+		<actuatorpos name='J_R3'  actuator='J_R3' user='13'/>
+		<actuatorpos name='J_R4_ankel'  actuator='J_R4_ankel' user='13'/>	 
+
+		<actuatorpos name='J_L0_v'  actuator='J_L0' user='13'/>
+		<actuatorpos name='J_L1_v'  actuator='J_L1' user='13'/>
+		<actuatorpos name='J_L2_v'  actuator='J_L2' user='13'/>
+		<actuatorpos name='J_L3_v'  actuator='J_L3' user='13'/>
+		<actuatorpos name='J_L4_v_ankel'  actuator='J_L4_ankel' user='13'/>
+		<actuatorpos name='J_R0_v'  actuator='J_R0' user='13'/>
+		<actuatorpos name='J_R1_v'  actuator='J_R1' user='13'/>
+		<actuatorpos name='J_R2_v'  actuator='J_R2' user='13'/>
+		<actuatorpos name='J_R3_v'  actuator='J_R3' user='13'/>
+		<actuatorpos name='J_R4_v_ankel'  actuator='J_R4_ankel' user='13'/>	 
+
+		<actuatorfrc name='J_L0_f'  actuator='J_L0' user='13'/>
+		<actuatorfrc name='J_L1_f'  actuator='J_L1' user='13'/>
+		<actuatorfrc name='J_L2_f'  actuator='J_L2' user='13'/>
+		<actuatorfrc name='J_L3_f'  actuator='J_L3' user='13'/>
+		<actuatorfrc name='J_L4_f_ankel'  actuator='J_L4_ankel' user='13'/>
+		<actuatorfrc name='J_R0_f'  actuator='J_R0' user='13'/>
+		<actuatorfrc name='J_R1_f'  actuator='J_R1' user='13'/>
+		<actuatorfrc name='J_R2_f'  actuator='J_R2' user='13'/>
+		<actuatorfrc name='J_R3_f'  actuator='J_R3' user='13'/>
+		<actuatorfrc name='J_R4_f_ankel'  actuator='J_R4_ankel' user='13'/>	 
+
+        <framequat     name='orientation' objtype='site' noise='0.001' objname='imu'/>
+        <framepos      name='position' objtype='site' noise='0.001' objname='imu'/>
+        <gyro          name='angular-velocity'    site='imu' noise='0.005' cutoff='34.9'/>
+        <velocimeter   name='linear-velocity'     site='imu' noise='0.001' cutoff='30'/>
+        <accelerometer name='linear-acceleration' site='imu' noise='0.005' cutoff='157'/>
+        <magnetometer  name='magnetometer'        site='imu'/>
+    </sensor>
+</mujoco>

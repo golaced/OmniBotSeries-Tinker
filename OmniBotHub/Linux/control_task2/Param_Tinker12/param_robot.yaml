@@ -1,0 +1,181 @@
+robot: tinymal-small-01 #odroid@192.168.1.120 3Dof
+
+robot_param: 
+  L1: 0.12
+  L2: 0.14
+  L3: 0.075
+  L4: 0.0
+  H: 0.306
+  W: 0.09
+  Q_side_bias: 0.0
+
+  Mess: 12.0
+  Ix_Body: 0.04
+  Iy_Body: 0.075
+  Iz_Body: 0.06
+
+kin_param: #0 left leg
+  dof_num:  [5,5,5,5]
+  kin_head: [1,-1,1,-1]
+
+  init_q00: 0
+  init_q01: -4
+  init_q02: 50
+  init_q03: -96
+  init_q04: 48
+  init_q05: 0
+  init_q10: 0
+  init_q11: 4
+  init_q12: 50
+  init_q13: -96
+  init_q14: 48
+  init_q15: 0
+
+  max_q00: 22
+  max_q01: 18
+  max_q02: 74
+  max_q03: 0
+  max_q04: 65
+  max_q05: 0
+  max_q10: 22
+  max_q11: 18
+  max_q12: 74
+  max_q13: 0
+  max_q14: 65
+  max_q15: 0
+
+  min_q00: -22
+  min_q01: -18
+  min_q02: -36
+  min_q03: -142
+  min_q04: -40
+  min_q05: 0
+  min_q10: -22
+  min_q11: -18
+  min_q12: -36
+  min_q13: -142
+  min_q14: -40
+  min_q15: 0
+
+  reset_q00: 28.4
+  reset_q01: 26
+  reset_q02: 47
+  reset_q03: -138.5
+  reset_q04: -7.8
+  reset_q05: 0
+  reset_q10: -28.4
+  reset_q11: -26
+  reset_q12: 47
+  reset_q13: -138.5
+  reset_q14: -7.8
+  reset_q15: 0
+
+  tau_max00: 6
+  tau_max01: 12
+  tau_max02: 12
+  tau_max03: 12
+  tau_max04: 6
+  tau_max05: 0
+  tau_max10: 6
+  tau_max11: 12
+  tau_max12: 12
+  tau_max13: 12
+  tau_max14: 6
+  tau_max15: 0
+
+servo_param: #0 left arm
+  dof_num:  [5,5,5,5]
+  kin_head: [1,-1,1,-1]
+
+  init_q00: -90
+  init_q01: -45
+  init_q02: 0
+  init_q03: 0
+  init_q04: 0
+  init_q05: 0
+  init_q10: 0
+  init_q11: 0
+  init_q12: 0
+  init_q13: 0
+  init_q14: 0
+  init_q15: 0
+
+  max_q00: 5
+  max_q01: 40
+  max_q02: 90
+  max_q03: 0
+  max_q04: 0
+  max_q05: 0
+  max_q10: 0
+  max_q11: 0
+  max_q12: 0
+  max_q13: 0
+  max_q14: 0
+  max_q15: 0
+
+  min_q00: -92
+  min_q01: -60
+  min_q02: -90
+  min_q03: 0
+  min_q04: 0
+  min_q05: 0
+  min_q10: 0
+  min_q11: 0
+  min_q12: 0
+  min_q13: 0
+  min_q14: 0
+  min_q15: 0
+
+  reset_q00: -8
+  reset_q01: 0
+  reset_q02: -15
+  reset_q03: 0
+  reset_q04: 0
+  reset_q05: 0
+  reset_q10: 0
+  reset_q11: 0
+  reset_q12: 0
+  reset_q13: 0
+  reset_q14: 0
+  reset_q15: 0
+ 
+#---------------dynamic param
+dyn_param: 
+  MESS_KIN1:    0.3   #kg
+  MESS_KIN12:   0.02   #kg
+  MESS_KIN2:    0.32   #kg
+  L_MESS_KIN1:  0.01  #l3
+  L_MESS_KIN12: 0.45   #rate*l1
+  L_MESS_KIN2:  0.065 #l3
+
+#----------------着地参数
+touch_st_stand:
+  st_td: 3.5
+  st_lf: 2
+  check_spd: 0.6
+  check_td: 2
+  check_lf: 1
+
+touch_st_trot:
+  st_td: 5
+  st_lf: 2
+  check_spd: 0.6
+  check_td: 2
+  check_lf: 1
+
+touch_swing:
+  st_td: 16
+  trot_sw: 10
+  st_lf: 2
+  check_spd: 1.2
+  check_td: 2
+  check_lf: 1
+
+touch_td:
+  st_td: 8
+  st_lf: 1.5
+  check_spd: 0.8
+  check_td: 2
+  check_lf: 1
+
+
