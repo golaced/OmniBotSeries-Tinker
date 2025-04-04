@@ -14,7 +14,7 @@ The entire robot uses a brushless motor, runs a reinforcement learning algorithm
 # State of sim2real
 The gait of TinkerV2 version is highly consistent with the BDX effect ! 
 
-<video src="https://github.com/golaced/OmniBotSeries-Tinker/blob/main/Home_Image/tinker_real_demo.mp4" controls="controls" width="500" height="300"></video>
+<video src="https://github.com/golaced/OmniBotSeries-Tinker/blob/main/Home_Image/tinker_real_demo.mp4"  controls="controls" width="500" height="300"></video>
 
 https://github.com/golaced/OmniBotSeries-Tinker/blob/main/Home_Image/tinker_real_back_push_smaller
 
