@@ -1,11 +1,10 @@
 # OmniBotSeries-Tinker
 Building a high-performance bipedal robot that combines Pixar and Disney BDX
-
 <table>
   <tr>
-    <td> <img src="https://github.com/OmniBotSeries-Tinker/Home_Image/1.png" alt="1" width="300px" ></td>
-    <td> <img src="https://github.com/OmniBotSeries-Tinker/Home_Image/2.png" alt="2" width="300px" ></td>
-    <td> <img src="https://github.com/OmniBotSeries-Tinker/Home_Image/3.png" alt="3" width="300px" ></td>
+    <td> <img src="https://github.com/golaced/OmniBotSeries-Tinker/blob/main/Home_Image/1.png" alt="1" width="300px" ></td>
+    <td> <img src="https://github.com/golaced/OmniBotSeries-Tinker/blob/main/Home_Image/2.png" alt="2" width="300px" ></td>
+    <td> <img src="https://github.com/golaced/OmniBotSeries-Tinker/blob/main/Home_Image/3.png" alt="3" width="300px" ></td>
    </tr> 
 </table>
 
