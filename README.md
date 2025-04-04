@@ -10,6 +10,7 @@ Building a high-performance bipedal robot that combines Pixar and Disney BDX
 
 In this project, we combined Pixar's lamp robot and Disney's BDX robot to build a 60cm high-performance Tinker bipedal robot.
 The entire robot uses a brushless motor, runs a reinforcement learning algorithm and comes with an open source tutorial. The cost of the whole machine is less than 15,000 RMB!
+This project will update the latest information in real time in the Feishu link below[https://hcn64ij2s2xr.feishu.cn/wiki/AZJxwlvEpiWnRrkeBbGc21U9n7f]
 
 # State of sim2real
 The gait of TinkerV2 version is highly consistent with the BDX effect ! 
@@ -19,19 +20,8 @@ https://private-user-images.githubusercontent.com/16828431/430457828-f0ea37f3-0f
 https://private-user-images.githubusercontent.com/16828431/430457885-5fd6a661-4399-4f3d-8686-e99e13dff1be.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM3ODMxNjQsIm5iZiI6MTc0Mzc4Mjg2NCwicGF0aCI6Ii8xNjgyODQzMS80MzA0NTc4ODUtNWZkNmE2NjEtNDM5OS00ZjNkLTg2ODYtZTk5ZTEzZGZmMWJlLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA0VDE2MDc0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJjOWIzMjBlMmQ3MDJjYjJkZTdlOWFhZmQ0OGU3NzU0MzI1ODRiOWRmY2NjZWFkMjUwNjYxYmFlNThmOTY5NmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.MVlJK7VAP7XI22lxy7mg0DW2KEQ_tOTj9H8t4jal5_I
 
 # Updates
-> Update 02/04/2024: You can try two policies we trained : [this one](BEST_WALK_ONNX.onnx) and [this one](BEST_WALK_ONNX_2.onnx)
-> I run with the following arguments :
-> python v2_rl_walk_mujoco.py --onnx_model_path ~/BEST_WALK_ONNX_2.onnx -p 32 --commands --cutoff_frequency 40
+> Update 2025/4/5: You can try two policies we trained : Update TinkerV2 first release version
 
-> Update 15/03/2025: join our discord server to get help or show us your duck :) https://discord.gg/UtJZsgfQGe
-
-> Update 07/02/2025: Big progress on sim2real, see videos above :)
-
-> Update 24/02/2025: Working hard on sim2real ! 
-
-> Update 07/02/2025 : We are writing documentation on the go, but the design and BOM should not change drastically. Still missing the "expression" features, but they can be added after building the robot!
-
-> Update 22/01/2025 : The mechanical design is pretty much finalized (fixing some mistakes here and there). The current version does not include all the "expression" features we want to include in the final robot (LEDs for the eyes, a camera, a speaker and a microphone). We are now working on making it walk with reinforcement learning !
 
 # CAD
 https://private-user-images.githubusercontent.com/16828431/430457786-0a5316d1-bd46-40a6-932d-3f43c3e6b83e.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM3ODMzNzUsIm5iZiI6MTc0Mzc4MzA3NSwicGF0aCI6Ii8xNjgyODQzMS80MzA0NTc3ODYtMGE1MzE2ZDEtYmQ0Ni00MGE2LTkzMmQtM2Y0M2MzZTZiODNlLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA0VDE2MTExNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk3OTVlMWM5NjJmNzA2M2M2NTIxNzQxNTBlMDc0Zjg2ZTMwMmM1NjhlZjc3YzBkNTYzYTk3YTdkY2Q2ZjIzNjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.8Z5d7ga20yFIBkBnhm_UFgYnPaq4_8kAawa9LYxHZxU
@@ -58,11 +48,13 @@ https://private-user-images.githubusercontent.com/16828431/430457854-93e3f5cd-da
 See [this repo](https://github.com/78/xiaozhi-esp32)
 
 # BOM
+You can get the BOM list at the link below
 https://hcn64ij2s2xr.feishu.cn/wiki/DPWDwNWaZiGNvpkbRrGcBXCHn7d
-
 # Build Guide
+The following is an overview of the robot project
 https://hcn64ij2s2xr.feishu.cn/wiki/AZJxwlvEpiWnRrkeBbGc21U9n7f
 ## Assembly Guide
+The following link is an introduction to the overall project assembly of the robot
 https://hcn64ij2s2xr.feishu.cn/wiki/FqmXwnRYliwYFbkXCO7csSHWnfh
 # Sofeware Guide
 This repo contains the software to run the policies of TVM on the onboard computer (Odroid C4) https://hcn64ij2s2xr.feishu.cn/wiki/MJ25wew9PijvXlkIoH7cZ9e4nCh
