@@ -11,7 +11,8 @@ Building a high-performance bipedal robot that combines Pixar and Disney BDX！
 In this project, we combined Pixar's lamp robot and Disney's BDX robot to build a 60cm high-performance Tinker bipedal robot.</br>
 The entire robot uses a brushless motor, runs a reinforcement learning algorithm and comes with an open source tutorial. The cost of the whole machine is less than 15,000 RMB!</br>
 This project will update the latest information in real time in the Feishu link below[https://hcn64ij2s2xr.feishu.cn/wiki/AZJxwlvEpiWnRrkeBbGc21U9n7f]</br>
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114280171049610&bvid=BV1FRZoY1ExW&cid=29235939970&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+https://www.bilibili.com/video/BV1FRZoY1ExW/?spm_id_from=333.337.search-card.all.click
 
 # State of sim2real
 The gait of TinkerV2 version is highly consistent with the BDX effect ! 
