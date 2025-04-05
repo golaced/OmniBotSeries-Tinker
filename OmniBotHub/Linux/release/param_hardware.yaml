@@ -1,0 +1,6 @@
+robot: corgi_pro
+mems_param:
+  imu_usb_enable: 0
+  imu_set_att: [0, 0, 0]
+  att_bias: [0, 0, 0]
+  gyro_bias: [0.0822757706, -0.467188448, 0.0491866246]
